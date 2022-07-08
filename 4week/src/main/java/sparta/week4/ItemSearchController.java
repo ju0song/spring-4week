@@ -46,7 +46,8 @@ public class ItemSearchController {
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         JsonNode itemsNode = objectMapper.readTree(naverApiResponseJson).get("items");
         List<ItemDto> itemDtoList = objectMapper
-                .readerFor(new TypeReference<List<ItemDto>>() {})
+                .readerFor(new TypeReference<List<ItemDto>>() {
+                })
                 .readValue(itemsNode);
 
         return itemDtoList;
