@@ -1,6 +1,7 @@
 package sparta.week4.Controller;
 import lombok.RequiredArgsConstructor;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 import sparta.week4.Entity.Product;
 import sparta.week4.Dto.ProductMypriceRequestDto;
@@ -17,8 +18,7 @@ public class ProductController {
     //객체 중복삭제
    private final ProductService productService;
 
-    public ProductController(){
-        ProductService productService =  new ProductService();
+    public ProductController(ProductService productService){
         this.productService = productService;
 
     }

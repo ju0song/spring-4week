@@ -1,5 +1,6 @@
 package sparta.week4.Service;
 
+import org.springframework.stereotype.Component;
 import sparta.week4.Entity.Product;
 import sparta.week4.Dto.ProductMypriceRequestDto;
 import sparta.week4.ProductRepository;
@@ -7,13 +8,12 @@ import sparta.week4.Dto.ProductRequestDto;
 
 import java.sql.SQLException;
 import java.util.List;
-
+@Component
 public class ProductService {
     //객체 중복삭제!
     private  ProductRepository productRepository;
 
-    public ProductService(){
-        ProductRepository productRepository =  new ProductRepository();
+    public ProductService(ProductRepository productRepository ){
         this.productRepository = productRepository;
     }
 
