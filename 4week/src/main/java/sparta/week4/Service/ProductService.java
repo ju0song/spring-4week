@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import sparta.week4.Dto.ProductMypriceRequestDto;
 import sparta.week4.Dto.ProductRequestDto;
 import sparta.week4.Entity.Product;
-import sparta.week4.ProductRepository;
+import sparta.week4.Repository.ProductRepository;
 
 import java.sql.SQLException;
 import java.util.List;
