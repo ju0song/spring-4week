@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import sparta.week4.Entity.User;
 import sparta.week4.Repository.UserRepository;
-
+//DB의 회원정보 조회 ->스프링 시큐리티의 인증관리자 에게 전달
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 

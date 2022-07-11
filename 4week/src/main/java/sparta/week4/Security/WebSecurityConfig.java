@@ -44,6 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 // [로그인 기능]
                 .formLogin()
 // 로그인 View 제공 (GET /user/login)
+// 2-9로그인,로그아웃 기능 구현 로그인 view 제공
                 .loginPage("/user/login")
 // 로그인 처리 (POST /user/login)
                 .loginProcessingUrl("/user/login")
