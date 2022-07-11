@@ -1,10 +1,11 @@
 package sparta.week4.Controller;
 
-import com.sparta.springcore.security.UserDetailsImpl;
+
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import sparta.week4.Security.UserDetailsImpl;
 
 @Controller
 public class HomeController {
